@@ -9,13 +9,13 @@ namespace ConsoleApp22
     class Program
     {
         static void Main(string[] args)
-        {//Zadanie 5.
+        { 
             int rok;
-            Console.WriteLine("Podaj rok");
+            Console.WriteLine("Tell me year you want to check: ");
             rok = Convert.ToInt32(Console.ReadLine());
             if (((rok % 4 == 0) && (rok % 100 != 0)) || (rok % 400 == 0))
-            Console.WriteLine("Rok {0} jest przestępny", rok);
-            else Console.WriteLine("Rok {0} nie jest przestępny", rok);
+            Console.WriteLine("Year {0} is a leap year", rok);
+            else Console.WriteLine("Year {0} is not a leap year", rok);
 
             Console.ReadKey(true);
 
